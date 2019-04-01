@@ -1,0 +1,30 @@
+{
+  "name": "frontend-developer-webinar-4",
+  "version": "1.0.0",
+  "description": "## Introductions - David and Ben ## House keeping   - Please mute your microphone unless talking.   - Ask questions whenever, via zoom messaging or voice. Will do a Q&A at the end as well and then obviously you can ask questions on slack. ## Disclaimer ;)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/not-rmit-but-kind-of/frontend-developer-webinar-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/not-rmit-but-kind-of/frontend-developer-webinar-4/issues"
+  },
+  "homepage": "https://github.com/not-rmit-but-kind-of/frontend-developer-webinar-4#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}
