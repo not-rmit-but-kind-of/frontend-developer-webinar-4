@@ -1,0 +1,13 @@
+{
+  "name": "webinar-4-demo-project",
+  "version": "1.0.0",
+  "description": "Demo project for webinar 4",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Someone",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
