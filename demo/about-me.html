@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans" rel="stylesheet">
-  <script src="form.js" type="text/javascript"></script>  
+  <script defer src="form.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -23,19 +23,19 @@
   </header>
 
   <main>
-    <form id='feedbackForm' onsubmit="return submitFeedbackForm()">
+    <form id='feedbackForm' class='js-feedback-form'>
 
       <label for='fullname'>Name</label>
-      <input id='fullname'/>
+      <input id='fullname' name="fullName" />
 
       <label for='email'>Email</label>
-      <input id='email'/>
+      <input id='email' name="email"/>
 
       <label for='feedback'>Tell me what you think</label>
-      <textarea id='feedback' rows="10"></textarea>
+      <textarea id='feedback' name="feedback" rows="10"></textarea>
 
-      <button type='submit'>Send</button>
-    </form>    
+      <button class="js-btn" type='submit'>Give Feedback</button>
+    </form>
   </main>
 
 </body>
