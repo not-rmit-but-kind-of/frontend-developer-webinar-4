@@ -9,19 +9,17 @@
 ## Agenda
 
 1. Form submission example extended
-    - Send the form data to a real endpoint
-    - Display progress spinner
-    - Handle errors (show error to user)
+    - Send the form data to a real endpoint using Async / Await 
+    - Display progress 
     - Handle success (show success to user)
-    - Debugging via the browser
-    - Use Promises and then use Async / Await
+    - Debugging via the browser    
 
 1. Newer features of the language
     - let / const
     - Spread operator
     - Maps
     - Sets
-    - Generators (use cases?)
+    - Generators
     - Async / await
     - Object / Array destructuring
 
