@@ -1,34 +1,25 @@
 class Form {
   constructor(element) {
-    if (!element) {
-      return;
-    }
-
     this.element = element;
+    this.emailInput = this.element.querySelector('#email');
+    this.nameInput = this.element.querySelector('#fullname');
+    this.feedbackInput = this.element.querySelector('#feedback');
     this.submitBtn = this.element.querySelector('.js-btn');
 
     this.element.addEventListener('submit', event => {
       event.preventDefault();
-      this.handleSubmit().catch(error => console.log(error));
+      this.handleSubmit();
     });
-  }
-
-  serialise() {
-    const data = {};
-    const formData = new FormData(this.element);
-
-    for (const param of formData) {
-      const [key, value] = param;
-      data[key] = value;
-    }
-
-    return data;
   }
 
   async handleSubmit() {
     this.submitBtn.innerHTML = 'Submitting...';
 
-    const data = this.serialise();
+    const data = {
+      name: this.nameInput.value,
+      email: this.emailInput.value,
+      feedback: this.feedbackInput.value,
+    };
 
     const response = await fetch('https://reqres.in/api/feedback?delay=2', {
       method: 'POST',
