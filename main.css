@@ -1,0 +1,237 @@
+/* Mini Reset */
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+/* REM Sizing */
+
+html {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Nav */
+
+nav {
+  text-align: right;
+  max-width: 1310px;
+  margin: 0.5rem auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1rem;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:last-child {
+  margin-right: 0;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  min-height: 60vh;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-image {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-author {
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 1310px;
+}
+
+.destination-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -.5rem;
+  margin-left: -.5rem;
+}
+
+.destination-card-list-item {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  .destination-card-list-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .destination-card-list-item {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+/* Destination Card */
+
+.destination-card {
+  border: 1px #CCC solid;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+.destination-card-content {
+  padding: 1.25rem;
+}
+
+.destination-card-heading {
+  margin: 0;
+  line-height: 1;
+}
+
+.destination-card-summary {
+  font-size: 1rem;
+}
+
+/* about-you page */
+
+.profile {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.profile-pic {
+  margin: 0 auto;
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 400px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: #007bff;;
+}
+
+button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  transition: 300ms ease;
+}
+
+button:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+}
+
+input {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+}
+
+.sendingSection {
+  position: fixed;
+  right: 5px;
+  width: 300px;
+  top: 5px;
+  background-color: #ccc;
+  border: 2px solid #999;
+  padding: .5rem;
+}

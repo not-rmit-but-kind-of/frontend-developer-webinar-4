@@ -27,7 +27,9 @@ class Form {
 
   async handleSubmit() {
     this.submitBtn.innerHTML = 'Submitting...';
+
     const data = this.serialise();
+
     const response = await fetch('https://reqres.in/api/feedback?delay=2', {
       method: 'POST',
       mode: 'cors',
@@ -36,7 +38,9 @@ class Form {
       },
       body: JSON.stringify(data),
     });
+
     const responseJSON = await response.json();
+
     this.submitBtn.innerHTML = `Thank you ${responseJSON.fullName}!`;
 
     setTimeout(() => {
